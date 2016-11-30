@@ -2,9 +2,181 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Assignment 3b</title>
+	<style>
+	body {
+		color: #000080;
+		margin: 0 5%;
+		background: url("orange.png") right repeat-y;
+		background-size: 8%;
+	}
+	.transform p::first-letter {
+		font-size: 200%;
+		color: orange;
+	}
+	.centerImage {
+		text-align: center;
+		display: block;
+	}
+	.header {
+		width: 90%;
+		margin-bottom: 4%;
+		padding-left: 5%;
+		height: 20%;
+		text-transform: uppercase;
+		background-color: rgb(254, 255, 204);
+		font-weight: bold;
+		color: #000080;
+		border: 2px dotted rgb(232, 188, 56)
+	}
+	.contentHeader {
+		float: left;
+		width: 60%;
+		margin-bottom: 4%;
+		padding-left: 5%;
+		height: 20%;
+		text-transform: uppercase;
+		background-color: rgb(254, 255, 204);
+		color: #000080;
+		overflow: auto;
+		border: 2px dotted rgb(232, 188, 56)
+	}
+	.sideLinks {
+		margin: 5%;
+		background: url("orange.png") right repeat-y rgb(227, 230, 230);
+		background-size: 30px;
+		float: right;
+		width: 250px;
+		height: 200px;
+		border-width: 10px 2px 2px 2px;
+		border-style: solid;
+		border-color: orange;
+		overflow: scroll;
+		color: #000080;
+		padding-left: 1%;
+	}
+	.sideLinks a:link {
+		color: orange;
+	}
+	.sideLinks a:hover {
+		background-color: beige;
+	}
+
+	 .button {
+	   border: solid 2px blue;
+	   background: url("orange.png") bottom repeat-x white;
+	   background-size: 20%;
+	   width: 200px; 
+	   height: 80px;
+	   text-align: center; 
+	   text-decoration: none; 
+	   color: blue;
+	   padding: 1%;
+	   margin: 2%;
+	   font-weight: bold; 
+	   font-size: 14pt;
+	   display: inline-block;
+	}
+
+	.button:hover {
+		color: orange;
+		font-size: 150%;
+	}
+
+	</style>
 </head>
 <body>
-	
+	<!--Logo-->
+	<p class="centerImage"><img src="occ.gif" alt="OCC logo"></p>
+
+	<!--Navigational-links-->
+	<div style="margin-bottom: 5%, margin-top: 5%" align="center">
+		<a class="button" href="http://www.orangecoastcollege.edu/Pages/home.aspx">Home</a>
+		<a class="button" href="http://www.orangecoastcollege.edu/academics/Pages/default.aspx">Academics</a>
+		<a class="button" href="http://www.orangecoastcollege.edu/enrollment/Pages/default.aspx">Enrollment&nbsp;Center</a>
+		<a class="button" href="http://www.orangecoastcollege.edu/student_services/Pages/default.aspx">Student&nbsp;Services</a>
+	</div>
+
+	<!--Header of the Page-->
+	<div class="header">
+		<h3>Orange Coast College Division of Business and Computing</h3>
+	</div>
+	<h6></h6>
+
+	<!--Side-Links scroll bar-->
+	<div class="sideLinks">	
+		<h3>Certificate Programs</h3>
+		<ul>
+			<li>
+			<a title="Accounting" href="http://www.orangecoastcollege.edu/academics/divisions/business/accounting/">
+			<strong>Accounting</strong></a> 
+			</li>
+			<li>
+			<a title="Business" href="http://www.orangecoastcollege.edu/academics/divisions/business/business/">
+			<strong>Business</strong></a> 
+			</li>
+			<li>
+			<a title="International Business" href="http://www.orangecoastcollege.edu/academics/divisions/business/international_business/">
+			<strong>International Business</strong></a> 
+			</li>
+			<li><strong>
+			<a title="Computer Information Systems" href="http://www.orangecoastcollege.edu/academics/divisions/business/computer_information_systems/">
+			Computer Information Systems</a></strong> 
+			</li>
+			<li>
+			<a title="Computer Science" href="http://www.orangecoastcollege.edu/academics/divisions/business/computer_science/">
+			<strong>Computer Science</strong></a></li>
+			<li>
+			<a title="Leadership Studies" href="http://www.orangecoastcollege.edu/academics/divisions/business/leadership_studies/">
+			<strong>Leadership Studies</strong></a> </li>
+			<li>
+			<a title="Management" href="http://www.orangecoastcollege.edu/academics/divisions/business/management/">
+			<strong>Management</strong></a> </li>
+			<li>
+			<a title="Marketing" href="http://www.orangecoastcollege.edu/academics/divisions/business/marketing/">
+			<strong>Marketing</strong></a> </li>
+			<li>
+			<a title="Real Estate" href="http://www.orangecoastcollege.edu/academics/divisions/business/real_estate/">
+			<strong>Real Estate</strong></a></li>
+		</ul>
+	</div>
+	<a href=""></a>
+	<div class="transform">
+		<p>
+			Will provide you with the tools to succeed in today's marketplace. Each of our courses will give you up-to-date, practical business fundamentals. We pride ourselves on our reputation of high-quality instruction and compelling 
+			courses which directly lead to profits for you! 
+		</p>
+	</div>
+	<!--content header 1-->
+	<div>
+		<div class="contentHeader">
+			<p>We have a very successful certificate program.</p>
+		</div>
+		<div class="transform">
+			<p>
+				A certificate shows you 
+				have applied yourself in a specific business area, and have completed a 
+				series of courses, which makes you more successful in the workplace. A 
+				Certificate of Completion requires three or more courses, and a <strong>
+				Certificate of Achievement</strong> requires 18 or more units. You can 
+				combine a Certificate of Achievement with General Education courses and 
+				earn your <strong>Associate in&nbsp;Arts</strong> degree.  
+			</p>
+		</div>
+    </div>
+	<!--content header 2-->
+	<div>
+		<div class="contentHeader">
+			<p>Finally, we want you to know that we are here for you.</p>
+		</div>
+		<div class="transform">
+			<p style="float:left" class="transform">
+				Our instructors, 
+				our support staff, and I are dedicated to your success. We know that 
+				today's business opportunities are limitless so please let us know what 
+				we can do to help you reach your educational goals!
+			</p>
+		</div>
+	</div>
 </body>
 </html>
